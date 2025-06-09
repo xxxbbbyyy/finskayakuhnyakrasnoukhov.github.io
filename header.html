@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <style>
+      /* Основные стили */
+      html,body {
+         margin: 0;
+         padding: 0;
+         font-family: Arial, sans-serif;
+         color: white;
+      }
+
+      /* Стиль для "крыши" */
+      .header {
+         background-color: #4169E1;
+         color: white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 0;
+         height: 80px; /* Высота заголовка */
+         box-sizing: border-box;
+         width: 100%;
+         position: relative; /* Позиционирование для абсолютного логотипа */
+      }
+
+      /* Стили для изображения */
+      .img {
+         width: 75px;
+         height: 75px;
+         border-radius: 50%;
+         position: absolute;
+         left: 20px; /* Фиксированное расположение слева */
+      }
+
+      /* Стили для заголовка */
+      .title {
+         font-size: 24px; /* Установленный размер шрифта */
+         margin: 0;
+      }
+   </style>
+</head>
+<body>
+   <div class="header">
+      <img src="logo.jpg" class="img" alt="Лого">
+      <h1 class="title">Финская кухня</h1>
+   </div>
+</body>
+</html>

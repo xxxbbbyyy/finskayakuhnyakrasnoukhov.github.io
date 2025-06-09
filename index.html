@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <title>Финская кухня</title>
+   <style>
+      /* Основные стили */
+      body, html {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         font-family: Arial, sans-serif;
+         background-color: #f2f2e9;
+         color: #333;
+      }
+
+      /* Контейнер для содержимого страницы */
+      .main-container {
+         display: flex;
+         flex: 1;
+         width: 100%;
+         height: calc(100vh - 160px); /* Учитываем высоту header и footer */
+         margin: 0; /* Убедитесь, что нет отступов */
+      }
+
+      /* Заголовок */
+      iframe.header {
+         width: 100%;
+         height: 80px;
+         border: none;
+         margin: 0; /* Убедитесь, что нет отступов */
+         position: relative;
+         top: 0;
+      }
+
+      /* Боковое меню */
+      iframe.menu {
+         width: 200px;
+         border: none;
+         background-color: #4169E1;
+         color: white;
+         overflow-y: auto;
+      }
+
+      /* Контейнер для основного содержимого */
+      iframe.content-frame {
+         flex: 1;
+         border: none;
+         background-color: white;
+         padding: 20px;
+         overflow-y: auto;
+      }
+
+      /* Подвал */
+      iframe.footer {
+         width: 100%;
+         height: 80px;
+         border: none;
+         background-color: #4169E1;
+         color: white;
+         text-align: center;
+         line-height: 80px;
+         position: relative; /* Измените на fixed, если необходимо */
+         margin: 0; /* Убедитесь, что нет отступов */
+         bottom: 0;
+      }
+   </style>
+</head>
+<body>
+
+   <!-- Фрейм заголовка -->
+   <iframe src="header.html" class="header"></iframe>
+  
+   <!-- Основной контейнер с боковым меню и контентом -->
+      <div class="main-container">
+      <!-- Фрейм меню -->
+      <iframe src="menu.html" class="menu"></iframe>
+
+      <!-- Фрейм основного контента -->
+      <iframe src="content.html" class="content-frame" name="content-frame"></iframe>
+   </div>
+
+   <!-- Фрейм подвала -->
+   <iframe src="footer.html" class="footer"></iframe>
+
+</body>
+</html>
